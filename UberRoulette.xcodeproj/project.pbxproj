@@ -19,6 +19,7 @@
 		22BDF21F1BAEAA39003B2A95 /* taxi.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BDF21D1BAEAA39003B2A95 /* taxi.png */; settings = {ASSET_TAGS = (); }; };
 		22BDF2211BAEAD8C003B2A95 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22BDF2201BAEAD8C003B2A95 /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
 		22BDF2241BAEDB04003B2A95 /* Roulette.gif in Resources */ = {isa = PBXBuildFile; fileRef = 22BDF2231BAEDB04003B2A95 /* Roulette.gif */; settings = {ASSET_TAGS = (); }; };
+		22BDF2261BAEF06B003B2A95 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BDF2251BAEF06B003B2A95 /* Icon-60@3x.png */; settings = {ASSET_TAGS = (); }; };
 		22C20F2D1BAD0F77001C8DE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C20F2C1BAD0F77001C8DE6 /* AppDelegate.swift */; };
 		22C20F2F1BAD0F77001C8DE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C20F2E1BAD0F77001C8DE6 /* LoginViewController.swift */; };
 		22C20F321BAD0F77001C8DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C20F301BAD0F77001C8DE6 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		22BDF21D1BAEAA39003B2A95 /* taxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taxi.png; sourceTree = "<group>"; };
 		22BDF2201BAEAD8C003B2A95 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		22BDF2231BAEDB04003B2A95 /* Roulette.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Roulette.gif; sourceTree = "<group>"; };
+		22BDF2251BAEF06B003B2A95 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		22C20F291BAD0F77001C8DE6 /* UberRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C20F2C1BAD0F77001C8DE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22C20F2E1BAD0F77001C8DE6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		22BDF21B1BAEA945003B2A95 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				22BDF2251BAEF06B003B2A95 /* Icon-60@3x.png */,
 				22BDF2231BAEDB04003B2A95 /* Roulette.gif */,
 				681FE5001BAEB11300334B7E /* clanpro-book.ttf */,
 				681FE5131BAED42800334B7E /* Invite_selected.png */,
@@ -380,6 +383,7 @@
 				681FE4FE1BAE5A6900334B7E /* background0.5x.png in Resources */,
 				22BDF21E1BAEAA39003B2A95 /* invite.png in Resources */,
 				681FE4FC1BAE5A6900334B7E /* background@2x.png in Resources */,
+				22BDF2261BAEF06B003B2A95 /* Icon-60@3x.png in Resources */,
 				22C20F321BAD0F77001C8DE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

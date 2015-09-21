@@ -47,7 +47,7 @@
         <!--Welcome-->
         <scene sceneID="4cB-b5-HoR">
             <objects>
-                <viewController title="Welcome" id="2TR-6t-N5d" customClass="LoginViewController" customModule="UberRoulette" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" title="Welcome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2TR-6t-N5d" customClass="LoginViewController" customModule="UberRoulette" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Yr-Cq-WFN"/>
                         <viewControllerLayoutGuide type="bottom" id="IHP-Oz-qHk"/>
@@ -334,8 +334,8 @@
                                 <color key="textColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coolest indie movies in the city!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyI-Fn-9Qf">
-                                <rect key="frame" x="179" y="318" width="242" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Coolest indie movies in the city!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyI-Fn-9Qf">
+                                <rect key="frame" x="20" y="318" width="560" height="225"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -344,7 +344,7 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BPn-BK-fej" firstAttribute="top" secondItem="HKH-7k-DT2" secondAttribute="bottom" constant="196" id="3pd-0e-OwM"/>
-                            <constraint firstItem="SVv-fQ-LiZ" firstAttribute="top" secondItem="iyI-Fn-9Qf" secondAttribute="bottom" constant="212" id="6Rj-W7-nIy"/>
+                            <constraint firstItem="SVv-fQ-LiZ" firstAttribute="top" secondItem="iyI-Fn-9Qf" secondAttribute="bottom" constant="8" id="6Rj-W7-nIy"/>
                             <constraint firstItem="jcH-TJ-QZ3" firstAttribute="centerX" secondItem="1i5-4e-r2D" secondAttribute="centerX" id="8Eu-GY-Ewl"/>
                             <constraint firstItem="iyI-Fn-9Qf" firstAttribute="centerX" secondItem="jcH-TJ-QZ3" secondAttribute="centerX" id="Evq-mk-fKs"/>
                             <constraint firstItem="iyI-Fn-9Qf" firstAttribute="top" secondItem="jcH-TJ-QZ3" secondAttribute="bottom" constant="8" symbolic="YES" id="HUv-oW-HKC"/>
@@ -353,7 +353,13 @@
                             <constraint firstItem="jcH-TJ-QZ3" firstAttribute="centerY" secondItem="1i5-4e-r2D" secondAttribute="centerY" id="wMn-Yb-QvW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="c5j-ra-BNe"/>
+                    <navigationItem key="navigationItem" id="c5j-ra-BNe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="AD3-dw-llm">
+                            <connections>
+                                <action selector="donePressed:" destination="fxL-4b-TZX" id="0ps-fF-6qc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageLabel" destination="iyI-Fn-9Qf" id="szk-6x-lN2"/>
                         <outlet property="nameLabel" destination="jcH-TJ-QZ3" id="yLM-fM-azU"/>

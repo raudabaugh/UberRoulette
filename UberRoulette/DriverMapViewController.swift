@@ -16,25 +16,27 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
 
         let geocoder = CLGeocoder()
-        if let addr = res["location"] as? String {
-            geocoder.geocodeAddressString(addr) {
-                (placemarks, error) in
-                let driverCoordinate = (placemarks?.first?.location?.coordinate)!
-                
-                let driverPin = MKPointAnnotation()
-                driverPin.coordinate = driverCoordinate
-                if let title = self.res["vehicle"] as? String {
-                    driverPin.title = title
+        if res != nil {
+            if let addr = res["location"] as? String {
+                geocoder.geocodeAddressString(addr) {
+                    (placemarks, error) in
+                    let driverCoordinate = (placemarks?.first?.location?.coordinate)!
+                    
+                    let driverPin = MKPointAnnotation()
+                    driverPin.coordinate = driverCoordinate
+                    if let title = self.res["vehicle"] as? String {
+                        driverPin.title = title
+                    }
+                    if let subtitle = self.res["driver"] as? String {
+                        driverPin.subtitle = subtitle
+                    }
+                    self.driverMap.addAnnotation(driverPin)
+                    
+                    let region = MKCoordinateRegionMakeWithDistance(driverCoordinate, 200.0, 200.0)
+                    self.driverMap.setRegion(region, animated: true)
                 }
-                if let subtitle = self.res["driver"] as? String {
-                    driverPin.subtitle = subtitle
-                }
-                self.driverMap.addAnnotation(driverPin)
                 
-                let region = MKCoordinateRegionMakeWithDistance(driverCoordinate, 200.0, 200.0)
-                self.driverMap.setRegion(region, animated: true)
             }
-            
         }
         
     }

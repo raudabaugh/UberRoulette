@@ -75,7 +75,7 @@ class RequestRideViewController: UIViewController, ASValueTrackingSliderDataSour
                     "max_radius": self.distanceSlider.value
                 ]
                 
-                Alamofire.request(.POST, "http://uberroulette.herokuapp.com/ride", parameters: parameters, encoding: .JSON)
+                Alamofire.request(.POST, "http://10.128.1.19:3000/ride", parameters: parameters, encoding: .JSON)
                     .responseJSON { request, response, result in
                         switch result {
                         case .Success(let json):

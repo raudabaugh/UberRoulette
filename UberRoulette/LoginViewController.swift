@@ -87,7 +87,7 @@ class LoginViewController: UIViewController {
                     "picture": json["picture"].stringValue
                 ]
                 
-                Alamofire.request(.POST, "http://uberroulette.herokuapp.com/auth/uber", parameters: parameters, encoding: .JSON)
+                Alamofire.request(.POST, "http://10.128.1.19:3000/auth/uber", parameters: parameters, encoding: .JSON)
                     .responseString { _, _, result in
                         print("Success: \(result.isSuccess)")
                         print("Response String: \(result.value)")

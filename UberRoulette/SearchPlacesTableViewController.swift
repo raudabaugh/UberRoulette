@@ -152,7 +152,7 @@ class SearchPlacesTableViewController: UITableViewController, UISearchBarDelegat
                             "places": geocodedPlaces
                         ]
                         
-                        Alamofire.request(.POST, "http://uberroulette.herokuapp.com/invite", parameters: parameters, encoding: .JSON)
+                        Alamofire.request(.POST, "http://10.128.1.19:3000/invite", parameters: parameters, encoding: .JSON)
                     }
                 }
             }

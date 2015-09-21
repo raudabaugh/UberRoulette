@@ -34,6 +34,11 @@ class FinalViewController: UIViewController {
     }
     
 
+    @IBAction func donePressed(sender: AnyObject) {
+        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.resetApp()
+        
+    }
     /*
     // MARK: - Navigation
 
